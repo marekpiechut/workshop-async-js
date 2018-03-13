@@ -1,0 +1,41 @@
+<html>
+<head>
+	<style>
+		body {
+			font-family: Monaco, "Lucida Console", monospace;
+  		background-color: #49483E;
+		  color: #FFFFFF;
+		}
+		ul {
+			list-style: none;
+			background-color: #515151;
+			padding: 1em;
+			margin: 0;
+		}
+		li {
+			padding: .1em 0;
+		}
+		li::before {
+			font-size: large;
+		  content: "> ";
+		  font-weight: bold;
+			color: #e6db74;
+		}
+		.error {
+			color: #960050;
+			background-color: #1e0010;
+		}
+	</style>
+</head>
+<!-- 	<script src="./lib/bluebird.min.js"></script> -->
+	<script src="./lib/data.js"></script>
+	<script src="./lib/core.js"></script>
+	<script src="./lib/callbacks.js"></script>
+	<script src="./lib/promises.js"></script>
+	<body>
+		<h1>Output</h1>
+		<ul id="output">
+		</ul>
+		<script src="./app.js"></script>
+	</body>
+</html>
